@@ -1,0 +1,202 @@
+html, .body {
+  margin: 0 auto;
+  font-family: 'Lato';
+  background:#666;
+  color:#fff;
+  margin-bottom: 40px;
+}
+
+.head{
+  text-align: center;
+}
+
+.header{
+  display: flex;
+  margin: 0 auto;
+}
+
+.take-note-create{
+  display: flex;
+  margin: 0 auto;
+  padding: 10px;
+  align-items: center;
+  padding-bottom: 0px;
+  margin-bottom: -10px;
+}
+
+.take-note-create button{
+  margin-left: 20px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.by-Guido{
+  text-decoration: none;
+  color: white;
+}
+
+.by-Guido:hover{
+  text-decoration: underline;
+  color: white;
+}
+
+.filter {
+  align-items: center;
+}
+
+.filter-form{
+  width: 200px!important;
+}
+
+.category-filter{
+  margin-right: 15px;
+}
+
+.form-content{
+  align-items: baseline;
+  display: flex;
+  width: 320px;
+  margin: 0 auto;
+  height: 40px;
+}
+
+.archived-button {
+  text-decoration: underline;
+  border: none;
+  background-color: unset;
+  color: white;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.archived-icon{
+  vertical-align: text-bottom;
+}
+
+.card-container{
+  margin: 15px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center
+}
+
+.note-card {
+  display:flex;
+  overflow: hidden;
+  color:#000;
+  margin: 9px;
+  border: 2px solid black;
+  width:250px;
+  height: 250px;
+  position: relative;
+  background:#ffc;
+  transform: rotate(-1deg);
+}
+
+.categories-div {
+  display: flex;
+}
+
+.categories-div button{
+  margin-left: 10px;
+}
+
+/* CARD ROTATION */
+.note-card:nth-child(even) {
+  transform:rotate(1deg);
+  position:relative;
+  top:1px;
+}
+.note-card:nth-child(3n) {
+  transform:rotate(-1deg);
+  position:relative;
+  top:-1px;
+}
+.note-card:nth-child(5n) {
+  transform:rotate(1deg);
+  position:relative;
+  top:-2px;
+}
+
+/* CARD ZOOM */
+.note-card:hover, .note-card:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+
+.note-card{
+  text-decoration:none;
+  color:#000;
+  background:rgb(255, 255, 168);
+  display:block;
+  padding:1em;
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  transition: transform .15s linear;
+}
+
+/* CARD COLORS */
+.•Work {
+  background:#ccf;
+}
+
+.•Daily {
+  background:rgb(191, 250, 191);
+}
+
+.•Info {
+  background:rgb(163, 192, 253);
+}
+
+.•Fun {
+  background:rgb(253, 204, 255);
+}
+
+.•Fun:nth-child(2n) {
+  background:rgb(253, 185, 146);
+}
+
+.note-title{
+  font-weight: bold;
+  font-size: 32px;
+  padding: 5px;
+}
+
+.note-text{
+  font-weight: normal;
+  font-family: 'Reenie Beanie';
+  font-size: 35px;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.icons{
+  position: absolute;
+  bottom:0px;
+  right: 0px;
+  padding: 4px;
+}
+
+.category-group{
+  position: absolute;
+  bottom:0px;
+  left: 12px;
+  font-size: 20px;
+}
+
+.category-text{
+  font-size: 30px;
+}
+
+.note-bin {
+  background-color: unset;
+  border:none;
+}
+
+.add-text{
+  font-size: 20px;
+  text-align: center;
+}
